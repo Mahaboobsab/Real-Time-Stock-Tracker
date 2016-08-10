@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcU-DA-UTK">
+                                <rect key="frame" x="20" y="20" width="560" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.69312220408026204" blue="0.21116190995289597" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="W7b-Kk-i3s"/>
+                                    <constraint firstAttribute="width" constant="560" id="jSv-LI-W6x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Meheboob Nadaf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1g-rw-rvK">
+                                <rect key="frame" x="20" y="553" width="560" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.69312220410000003" blue="0.21116191000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="7Ks-zu-nTG"/>
+                                    <constraint firstAttribute="width" constant="560" id="IEL-J1-5mv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.62739663970000004" green="0.77033371610000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StockMarket" translatesAutoresizingMaskIntoConstraints="NO" id="d9p-Te-3uQ">
+                                <rect key="frame" x="20" y="70" width="560" height="483"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="483" id="0ve-2z-moA"/>
+                                    <constraint firstAttribute="width" constant="560" id="7Sx-Nl-enh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m1g-rw-rvK" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="B72-Ey-dB6"/>
+                            <constraint firstItem="m1g-rw-rvK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="IfF-kO-ObN"/>
+                            <constraint firstItem="d9p-Te-3uQ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="mBn-bA-rPh"/>
+                            <constraint firstItem="d9p-Te-3uQ" firstAttribute="top" secondItem="TcU-DA-UTK" secondAttribute="bottom" id="nK5-wm-5ye"/>
+                            <constraint firstItem="TcU-DA-UTK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="o6I-6n-RWF"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="m1g-rw-rvK" secondAttribute="bottom" constant="13" id="p7P-9K-qZz"/>
+                            <constraint firstItem="d9p-Te-3uQ" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="tC3-Ra-eJA"/>
+                            <constraint firstItem="TcU-DA-UTK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="uEF-y8-fj8"/>
+                            <constraint firstItem="m1g-rw-rvK" firstAttribute="top" secondItem="d9p-Te-3uQ" secondAttribute="bottom" id="yO6-oP-mao"/>
+                            <constraint firstItem="TcU-DA-UTK" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="zjs-6A-kXY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="StockMarket" width="531" height="321"/>
+    </resources>
+</document>
